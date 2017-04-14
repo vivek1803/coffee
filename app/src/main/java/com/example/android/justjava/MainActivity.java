@@ -55,8 +55,6 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
 
-            //Test Commit
-
             //Get the coffee details from the radio button
             RadioGroup radioGrp = (RadioGroup) findViewById(R.id.radiogrp);
             int btnId = radioGrp.getCheckedRadioButtonId();
@@ -92,8 +90,10 @@ public class MainActivity extends AppCompatActivity {
             intent.setData(Uri.parse("mailto: v.vivek18@gmail.com"));
             intent.putExtra(Intent.EXTRA_SUBJECT, "Coffee Order for " + Name);
             intent.putExtra(Intent.EXTRA_TEXT, priceMessage);
-            startActivity(Intent.createChooser(intent, "Send Email"));
-            finish();
+            if(intent.resolveActivity(getPackageManager()) != null) {
+                startActivity(Intent.createChooser(intent, "Send Email"));
+                finish();
+            }
         }
     }
 
