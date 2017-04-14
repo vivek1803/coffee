@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Coffee Order</string>
+    <string name="name">Name</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="toppings">Toppings</string>
+    <string name="whipped_cream">Whipped Cream</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="quantity">Quantity</string>
+    <string name="order">Order</string>
+    <string name="add">Add</string>
+    <string name="total">Total</string>
+    <string name="coffee">Coffee</string>
+    <string name="thank_you">Thank You!</string>
+    <string name="selection">Select your coffee</string>
+    <string name="cappuccino">Cappuccino</string>
+    <string name="latte">Latte</string>
+    <string name="filter_coffee">Filter Coffee</string>
+</resources>
